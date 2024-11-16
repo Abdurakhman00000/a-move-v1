@@ -1,0 +1,58 @@
+.DisTvs {
+  .content {
+    margin-top: 120px;
+
+    h2 {
+      font-size: 24px;
+      font-weight: 400;
+    }
+  }
+
+  .main_disTV_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    gap: 20px;  
+
+    .disTVCard {
+      margin-bottom: 50px;
+      cursor: pointer;
+      flex-basis: calc(33.333% - 20px); 
+      max-width: calc(33.333% - 20px);
+
+      img {
+        width: 216px;
+        height: 324px;
+        border-radius: 13px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .main_disTV_list {
+      justify-content: space-around;
+
+      .disTVCard {
+        flex-basis: calc(50% - 10px);
+        max-width: calc(50% - 10px);
+
+        img {
+          width: 100px;
+          height: 170px; 
+          border-radius: 10px;
+        }
+      }
+
+      .content {
+        margin-top: 80px;
+
+        h2 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

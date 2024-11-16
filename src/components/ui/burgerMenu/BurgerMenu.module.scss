@@ -1,0 +1,76 @@
+.BurgerMenu {
+    position: absolute;
+    top: 49px;
+    right: 0;
+    width: 100%;
+    height: 250px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s;
+    background-color: rgb(4 21 45);
+    backdrop-filter: blur(4px);
+    border-top: 1px solid rgb(255 255 255 / 37.4%);
+    border-radius: 20px;
+
+    &.active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .content {
+        width: 100%;
+
+        .nav {
+            padding: 20px 30px;
+
+            li {
+                margin-bottom: 15px;
+                font-size: 20px;
+            }
+        }
+
+        .auth {
+            border-top: 1px solid white;
+            margin-top: 65px;
+            padding: 15px 30px;
+
+            .trueAuth {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+
+                button {
+                    width: 85px;
+                    height: 24px;
+                    border-radius: 5px;
+                    border: none;
+                }
+            }
+
+            .falseAuth {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                svg {
+                    width: 30px;
+                    height: 30px;
+                }
+
+                button {
+                    width: 85px;
+                    height: 24px;
+                    border-radius: 5px;
+                    border: none;
+                }
+            }
+        }
+    }
+}

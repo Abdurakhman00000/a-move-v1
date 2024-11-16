@@ -1,0 +1,113 @@
+.Trending {
+    .content {
+        .trending_header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h2 {
+                font-size: 24px;
+                font-weight: 400;
+            }
+        }
+
+        .buttons {
+            position: relative;
+            background-color: #eaeaea;
+            border-radius: 20px;
+            width: 204px;
+            height: 34px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 3px;
+          }
+    
+          button {
+            flex: 1;
+            border: none;
+            background: none;
+            color: #333;
+            font-size: 14px;
+            cursor: pointer;
+            z-index: 2;
+            position: relative;
+            padding: 0;
+            transition: color 0.3s ease;
+    
+            
+          }
+    
+          .active {
+            color: #fff;
+          }
+    
+          .switch {
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 97px;
+            height: 28px;
+            background: linear-gradient(116.11deg, rgb(181 9 189) 0.99%,rgb(218 47 104) 100%);
+            border-radius: 20px;
+            transition: transform 0.3s ease;
+          }
+        }
+      }
+
+        .main_movies_list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 0;
+            gap: 20px;
+            overflow-y: auto;
+
+            &::-webkit-scrollbar {
+              display: none;
+            }
+
+            .movieCard {
+                cursor: pointer;
+
+                img {
+                    width: 216px;
+                    height: 324px;
+                    border-radius: 14px;
+                }
+
+                h3 {
+                    font-size: 20px;
+                    font-weight: 500;
+                    margin-top: 20px;
+                }
+
+                p {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: rgb(255 255 255 / 52.6%);
+                    margin-top: 5px;
+                }
+            }
+        }
+    
+
+        @media(width <= 900px) {
+          .Trending {
+            margin-top: -250px;
+          }
+        }
+
+        @media(width <= 350px) {
+          .Trending {
+            margin-top: -300px;
+
+            .content {
+              .trending_header {
+                h2 {
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+        }

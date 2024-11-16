@@ -1,0 +1,62 @@
+.TopRated {
+    .content {
+        margin-top: 30px;
+        margin-bottom: 50px;
+
+        h2 {
+            font-size: 24px;
+            font-weight: 400;
+        }
+
+
+        .main_topRated_list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 0;
+            gap: 20px;
+            overflow-y: auto;
+
+            &::-webkit-scrollbar {
+              display: none;
+            }
+
+            .topRatedCard {
+                cursor: pointer;
+
+                img {
+                    width: 216px;
+                    height: 324px;
+                    border-radius: 14px;
+                    object-fit: cover;
+                }
+
+                h3 {
+                    font-size: 20px;
+                    font-weight: 500;
+                    margin-top: 20px;
+                }
+
+                p {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: rgb(255 255 255 / 52.6%);
+                    margin-top: 5px;
+                }
+            }
+        }
+    
+
+    }
+}
+
+@media(width <= 900px) {
+    .TopRated {
+      .content {
+        .main_topRated_list {
+          overflow-x: auto;
+          gap: 30px;
+        }
+      }
+    }
+  }

@@ -1,0 +1,55 @@
+.DisMovies {
+    .content {
+        margin-top: 120px;
+
+        .h2 {
+            font-size: 24px;
+            font-weight: 400;
+        }
+
+        .main_disMovies_list { 
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 30px 0;
+
+            .disMoviesCard {
+            margin-bottom: 50px;
+                cursor: pointer;
+
+                img {
+                    width: 216px;
+                    height: 324px;
+                    border-radius: 14px;
+                    object-fit: cover;
+                }
+
+                h3 {
+                    font-size: 20px;
+                    font-weight: 500;
+                    margin-top: 20px;
+                }
+
+                p {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: rgb(255 255 255 / 52.6%);
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media(width <= 900px) {
+    .DisMovies {
+      .content {
+        .main_disMovies_list {
+            overflow-y: auto;
+            flex-wrap: nowrap;
+            gap: 30px;
+        }
+      }
+    }
+  }

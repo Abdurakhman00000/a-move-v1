@@ -1,0 +1,97 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(0 0 0 / 55.8%);
+  display: flex;
+  justify-content: flex-end; 
+  align-items: flex-start;   
+}
+
+.modalContent {
+  background: rgb(4 21 45);
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  width: 400px; 
+  margin: 20px; 
+  box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+
+  .userInfo {
+    button {
+      width: 150px;
+      height: 30px;
+      background-color: white;
+      color: black;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 17px;
+      font-weight: 500;
+      margin-top: 20px;
+    }
+  }
+
+  .Login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .login_info {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-bottom: 30px;
+
+      svg {
+        width: 40px;
+        height: 40px;
+        color: rgb(218 47 104);
+    }
+
+    h2 {
+        color: rgb(218 47 104);
+        font-family: "Permanent Marker", cursive;
+        margin-top: 20px;
+    }
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      width: 250px;
+      height: 35px;
+      background-color: white;
+      border-radius: 10px;
+      border: none;
+      color: black;
+      font-size: 16px;
+      margin-bottom: 20px;
+      cursor: pointer;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}

@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(4 21 45);
+}
+
+html {
+  color-scheme: dark;
+}
+
+
+li {
+  list-style: none;
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  font-family: Inter, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container_for_details {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
